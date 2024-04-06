@@ -1,6 +1,23 @@
+html, body {
+    height: 100%;
+}
 body {
     background-color: #ffede7;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5px 0px 5px;
+}
+nav, footer {
+    flex: 0 0 auto;
+    height: 50px;
+}
+main {
+    margin: 0px 10px 0px 10px ;
+    flex: 1;
+    background-color: #ffede7;
+}
+nav {
+    text-align: right;
 }
 nav li {
     display: inline;
@@ -13,28 +30,26 @@ nav li a {
 nav li a:hover {
     text-decoration: underline;
 }
-main {
+.container {
+    height: 100%;
+    width: 70%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+}
+.par, .pic {
+    flex: 1;
     text-align: center;
-}
-.par {
-    flex: 1;
-    flex-direction: column;
-}
-.pic {
-    flex: 1;
-    flex-direction: column;
+    margin-top: 70px;
 }
 .pic img {
     width: 150px;
     border-radius: 50%;
 }
+
 footer {
     bottom: 0;
-    position: fixed;
-    margin: 10px;
     width: 100%;
 }
 footer ul li {
