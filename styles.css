@@ -1,0 +1,46 @@
+body {
+    background-color: #ffede7;
+    height: 100%;
+}
+nav li {
+    display: inline;
+    margin-right: 5px;
+}
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+nav li a:hover {
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+.par {
+    flex: 1;
+    flex-direction: column;
+}
+.pic {
+    flex: 1;
+    flex-direction: column;
+}
+.pic img {
+    width: 150px;
+    border-radius: 50%;
+}
+footer {
+    bottom: 0;
+    position: fixed;
+    margin: 10px;
+    width: 100%;
+}
+footer ul li {
+    display: inline;
+    margin-right: 3px;
+}
+footer img {
+    width: 30px;
+}
